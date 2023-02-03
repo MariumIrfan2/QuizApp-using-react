@@ -69,8 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # QuizApp-using-react
+<<<<<<< HEAD
 "# QuizApp-using-react" 
 # QuizApp-with-react
 # QuizApp-with-react
 # QuizApp-with-react
 "# QuizApp-with-react" 
+=======
+"# QuizApp-using-react" 
+>>>>>>> fe32eafa2203a9b9a5448278408a9a1b6d5b1e79
