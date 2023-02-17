@@ -1,37 +1,18 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Login from "../screens/login";
-import SignUp from "../screens/signup";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../screens/home";
+import SignUp from "../screens/signup";
 
 
 function AppRouter() {
     return (
         <>
+
             <BrowserRouter>
-                <nav>
-                    <ol>
-                        <li>
-                            <Link to='home'>Home</Link>
-                        </li>
-
-                        <li>
-                            <Link to='signup'>SignUp</Link>
-                        </li>
-
-                        <li>
-                            <Link to='login'>Login</Link>
-                        </li>
-
-                    </ol>
-                </nav>
                 <Routes>
-                    <Route path='signup' element={<SignUp />} />
-                    <Route path='login' element={<Login />} />
                     <Route path="home" element={<Home />} />
+                    <Route path="/" element={<SignUp />} />
                 </Routes>
-
             </BrowserRouter>
-
 
         </>
     )

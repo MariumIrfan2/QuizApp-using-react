@@ -1,16 +1,23 @@
-import { Box, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-function Home(){
-const navigation = useNavigate()
 
-    return(
-      
-        <Box className='text-start'>
-              <h1>Home Screen</h1>
-        <Button className="p-2 m-3" variant='contained' onClick={() => { navigation("/signup") }}>Signup</Button>
-        <Button className="p-2 m-3" variant='contained' onClick={() => { navigation("/login") }}>Login</Button>
-    </Box>
+function Home() {
+    
+    const location = useLocation();
+    console.log(location.state.lastName)
+    const firstName = location.state.firstName
+    const lastName = location.state.lastName
+    const Email = location.state.Email
+    const Password = location.state.Password
+
+    return (
+        <>
+
+            <h3>First Name: {firstName}</h3>
+            <h3>Last Name: {lastName}</h3>
+            <h3>Email: {Email}</h3>
+            <h3> Password: {Password}</h3>
+        </>
     )
 }
 
